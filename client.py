@@ -21,5 +21,5 @@ try:
 			sys.exit()
 
 except Exception as error:
-	e = sys.exc_info()[0]
+	e = sys.exc_info()
 	print('Error occured while connecting')
