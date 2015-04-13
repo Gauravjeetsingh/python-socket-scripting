@@ -10,17 +10,17 @@ port = 8080
 
 serversocket.bind((host, port))
 
-serversocket.listen(5)
+serversocket.listen(1)
 
 clientsocket,addr = serversocket.accept()
 print("Got a connection from %s" % str(addr))
-print('Message Board')
 
 while True:
+	print('Message Board')
 	message = raw_input(':')
 	clientsocket.send(str(message))
 
 	if message == 'quit':
 		serversocket.shutdown(1)
 		serversocket.close()
-		sys.exit()		
+		sys.exit()
