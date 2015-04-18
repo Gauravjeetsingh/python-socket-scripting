@@ -1,9 +1,14 @@
-# A simple socket example written by
+## A simple socket example written by
 # Gauravjeet Singh
 # gaurav.ishwerdas@gmail.com
 
 import socket
 import sys
+
+## s1, s2
+# They both act as client sockets in this example
+# s1 sends a string to server socket core
+# s2 recieve string of data from server socket core
 
 s1 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s2 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
