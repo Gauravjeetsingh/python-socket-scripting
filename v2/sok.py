@@ -1,3 +1,7 @@
+# A simple socket example written by
+# Gauravjeet Singh
+# gaurav.ishwerdas@gmail.com
+
 import socket
 import sys
 
@@ -6,9 +10,8 @@ s2 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 try:
 	s1.connect(('localhost',8084))
-
 	data = raw_input('enter your message: ')
-
+	
 	s1.send(data)
 	s1.close()
 	
